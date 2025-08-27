@@ -128,9 +128,11 @@ header {
 }
 #banner .arrow_left {
 	left: 10px;
+	margin-left: 50px;
 }
 #banner .arrow_right {
 	right: 10px;
+	margin-right: 50px;
 }
 /* Gestion des points du carrousel */
 .dots {
