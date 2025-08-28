@@ -51,18 +51,20 @@ function updateBanner(index) {
 
 // → 5. Flèche droite
 arrowRight.addEventListener('click', () => {
+	console.log("Flèche droite cliquée");   // → Affiché dans la console
 	currentIndex++;                        // → next slide
 	if (currentIndex >= slides.length) {   // → si dernière slide
 		currentIndex = 0;                  // → revenir à la première
 	}
-	updateBanner(currentIndex);            // → mise à jour carrousel
+	updateBanner(currentIndex);            // → (mise à jour carrousel)
 });
 
 // → 5b. Flèche gauche
 arrowLeft.addEventListener('click', () => {
+    console.log("Flèche gauche cliquée");  // → Affiché dans la console
 	currentIndex--;                        // → slide précédente
 	if (currentIndex < 0) {                // → si avant la première
 		currentIndex = slides.length - 1;  // → aller à la dernière
 	}
-	updateBanner(currentIndex);            // → mise à jour carrousel
+	updateBanner(currentIndex);            // → (mise à jour carrousel)
 });
